@@ -54,7 +54,7 @@ namespace Aduaba.Services.Services
             var resultModel = new ResultModel<List<CustomerVM>>();
             try
             {
-                var customers = await _context.Customers.Where(x => x.IsDeleted == false).ToListAsync();
+                var customers = await _context.Customers.Where(x => x.IsDeleted==false).ToListAsync();
                 var customersVMs = customers.Select(x => (CustomerVM)x).ToList();
                 resultModel.Data = customersVMs;
                 resultModel.Message = $"Found {customers.Count} Customers";

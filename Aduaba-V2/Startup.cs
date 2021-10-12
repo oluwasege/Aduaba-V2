@@ -2,6 +2,8 @@ using Aduaba.Core.Configurations;
 using Aduaba.Core.EFCore;
 using Aduaba.Entities;
 using Aduaba.Entities.Models;
+using Aduaba.Services.Interfaces;
+using Aduaba.Services.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -60,7 +62,7 @@ namespace Aduaba_V2
 
 
             });
-
+            services.AddScoped<ICustomerService, CustomerService>();
             //Adding Athentication - JWT
             services.AddAuthentication(options =>
             {
