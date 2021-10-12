@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Aduaba.Models
+namespace Aduaba.Entities.Models
 {
     public class ApplicationUser : IdentityUser
     {

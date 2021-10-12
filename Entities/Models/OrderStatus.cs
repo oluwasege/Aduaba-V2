@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Aduaba.Models
+namespace Aduaba.Entities.Models
 {
     public class OrderStatus
     {

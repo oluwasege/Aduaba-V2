@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Aduaba.Models
+namespace Aduaba.Entities.Models
 {
     public class Order
     {
-
         [Key]
         public long Id { get; set; }
         [Required]

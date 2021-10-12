@@ -1,4 +1,4 @@
-﻿namespace Aduaba.Models
+﻿namespace Aduaba.Entities.Models
 {
     public class OrderDetail
     {
